@@ -16,6 +16,7 @@ $color-main:     #6baed6;
 $darker:         #21211E;
 $dark:           #2D2D29;
 $medium:         #3B3B35;
+/*$medium:		 #3b3b3e*/
 $light-medium:   #969696;
 $dark-blue:      #215A6D;
 $light-blue:     #3CA2A2;
@@ -577,7 +578,7 @@ ul {
 			blockquote {
 				position: relative;
 				width: 100%;
-		    margin-left: -15px;
+		    	margin-left: -15px;
 				padding-right: 10px;
 				background-color: $darker;
 				color: white;
