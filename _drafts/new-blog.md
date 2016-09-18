@@ -6,7 +6,7 @@ After several years of it sitting on a rather long to-do list, I've finally set 
 
 [Insert invite to blogwarming party here]
 
-I'm going to keep it mostly linguistics-based, as that's what I do, but little bits of tech and general hobbies will certainly sneak in when I'm not looking.
+I'm going to keep it mostly linguistics-based, as that's what I do, but little bits of tech and general hobbies will certainly sneak in when I'm not looking. They're rude like that.
 
 I was originally going to go with a Wordpress install but it was suggested that I give [Jekyll](https://jekyllrb.com/), a [static site](https://en.wikipedia.org/wiki/Static_web_page) generator, a try instead. Considering I didn't need the overhead or most of the features of a CMS like Wordpress, have done some HTML and a tiny amount of CSS (albeit it over ten years ago), and like working locally from a text editor, it seemed like a good idea. The ability to host the site for free on GithubPages was also appealing, especially since I'm now using a GitHub repo for my thesis as well.
 
