@@ -15,7 +15,6 @@
 # in the templates via {{ site.myvariable }}.
 title: This is site
 title_image: favicons/android-chrome-144x144.png
-email: your-email@domain.com
 title_description: So this is a description, right?
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://example.com" # the base hostname & protocol for your site
@@ -24,20 +23,28 @@ urls:
       url: /
       icon: fa-home
     - text: About Me
-      url: /about/
+      url: /about
       icon: fa-user
     - text: Links
-      url: /resources/
+      url: /resources
       icon: fa-link
     - text: All posts
-      url: /posts/
+      url: /posts
       icon: fa-archive
     - text: Search
-      url: /search/
+      url: /search
       icon: fa-search
 
-twitter_username: jekyllrb
-github_username:  jekyll
+social:
+    - icon: fa-envelope
+      link: 'mailto:r01daw13@abdn.ac.uk'
+      text: 'Email'
+    - icon: fa-twitter
+      link: 'http://twitter.com/dajwarren'
+      text: 'Twitter'
+    - icon: fa-github-alt
+      link: 'http://github.com/dajwarren'
+      text: 'Github'
 
 
 
