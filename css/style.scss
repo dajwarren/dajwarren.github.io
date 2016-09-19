@@ -35,7 +35,9 @@ $screen-md-min: 992px;
 $screen-lg-min: 1200px;
 
 /* Globals */
-.main.outer{padding-top: 50px;}
+// .main.outer {
+//     padding-top: 50px;
+// }
 
 html {
 	height: 100%;
@@ -139,15 +141,12 @@ ul {
 
 .navbar-panel {
 	background-color: $medium;
-    float: left;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	padding-left: 30px;
 	padding-right: 30px;
-	margin-top: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
-	box-shadow: 0px 0px 0px 0px, 0px 6px 12px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+	// box-shadow: 0px 0px 0px 0px, 0px 6px 12px //rgba(0, 0, 0, 0.2);
 	border-bottom: 5px solid $color-main;
 }
 
@@ -440,6 +439,7 @@ ul {
 .single {
 	height:100%;
 	max-height: 100%;
+    margin-left: 15%;
 
 	h1, h2, h3, h4, h5, h6 {
 		font-family: 'Montserrat', sans-serif;
@@ -506,24 +506,24 @@ ul {
 	}
 
 	.article {
-		width: 100%;
-		margin-left: 0%;
+		width: 75%;
+		margin-left: 5%;
 		padding: 0px;
 
-		@media (min-width: $screen-sm-min) {
-			width: 90%;
-			margin-left: 5%;
-		}
-
-		@media (min-width: $screen-md-min) {
-			width: 70%;
-			margin-left: 15%;
-		}
-
-		@media (min-width: $screen-lg-min) {
-			width: 50%;
-			margin-left: 25%;
-		}
+		// @media (min-width: $screen-sm-min) {
+		// 	width: 90%;
+		// 	margin-left: 5%;
+		// }
+        //
+		// @media (min-width: $screen-md-min) {
+		// 	width: 70%;
+		// 	margin-left: 15%;
+		// }
+        //
+		// @media (min-width: $screen-lg-min) {
+		// 	width: 50%;
+		// 	margin-left: 25%;
+		// }
 
 		.thumb {
 			margin-top: 20px;

@@ -1,22 +1,49 @@
+---
+---
 <!DOCTYPE html>
 <html>
 
     {% include head.html %}
 
-    <body>
-<div class="container main">
-    <div class="row">
-    <!-- {% include header.html %} -->
-    <!-- {% include navbar.html %} -->
+<body>
+<!-- Full-width container-->
+<div class="container-fluid">
 
-    <div class="page-content">
-      <div class="wrap">
-      {{ content }}
-      </div>
+<!-- Responsive container. Defines central column-->
+<div class="container single">
+    <div class="row">
+
+        <!-- Empty space -->
+        <div class="col-md-2">
+        </div>
+
+        <!-- Page title -->
+        <div class="col-md-12 article">
+            <h1 class="header" itemprop="name">{{ page.title }}</h1>
+        </div>
     </div>
 
-    {% include footer.html %}
+    <div class="row">
+
+        <!-- Navbar -->
+        {% include navbar.html %}
+
+        <!-- Page content -->
+        <div itemscope class="col-md-12 article">
+                <div class="page-content">
+                <div class="wrap">
+                {{ content }}
+                </div>
+                </div>
+        </div>
+    </div>
+
+<!-- End of containers     -->
 </div>
 </div>
-    </body>
+
+
+{% include footer.html %}
+
+</body>
 </html>
