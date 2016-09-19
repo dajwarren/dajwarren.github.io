@@ -1,11 +1,6 @@
 ---
+layout: base
 ---
-<!DOCTYPE html>
-<html>
-
-    {% include head.html %}
-
-<body>
 <!-- Full-width container-->
 <div class="container-fluid">
 
@@ -19,7 +14,7 @@
 
         <!-- Page title & thumbnail -->
         <div class="col-md-12 article">
-            
+
             <!-- Thumbnail -->
             {% if site.data.thumbnail[page.thumbnail] %}
             <div class="thumb">
@@ -33,6 +28,33 @@
 
             <!-- Title -->
             <h1 class="header" itemprop="name">{{ page.title }}</h1>
+
+            <!-- Page author -->
+            <div class="author">
+              <small><i>
+                {% if page.author %}
+                by
+                <span itemprop="author">
+                  {% if site.google_plus_link %}
+                    <a rel="author" href="{{ site.google_plus_link }}">
+                  {% endif %}
+                  <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                    <span itemprop="name">{{ page.author }}</span>
+                  </span>
+                  {% if site.google_plus_link %}
+                    </a>
+                  {% endif %}
+                </span>
+                {% endif %}
+
+                <!-- Display date and category ONLY if using the post.html layout  -->
+                {% if page.layout == 'post' %}
+                    on <span itemprop="datePublished" content="2014-08-28">{{ page.date | date: "%B %-d, %Y" }}</span>
+                    {% if page.categories != empty %} under {% for category in page.categories limit:1 %}{{ category }}{% endfor %}{% endif %}
+                {% endif %}
+              </i></small>
+            </div>
+
         </div>
     </div>
 
@@ -54,9 +76,3 @@
 <!-- End of containers     -->
 </div>
 </div>
-
-
-{% include footer.html %}
-
-</body>
-</html>
