@@ -20,6 +20,7 @@ $darker:         #29292d;
 $dark:           #29292d;
 // $dark:           #b3b7bd;
 $content-box:    #383b42;
+$nav-box:        #2a2d32;
 // $content-box:    #dfe4ec;
 $light-medium:   #969696;
 $dark-blue:      #215A6D;
@@ -31,6 +32,7 @@ $white:          #f2f2f2;
 $article-text:   #c8d1d7;
 $quote-text:   #c8d1d7;
 $code-text:   #c8d1d7;
+$navbar-text:    #abbac4;
 $dark-purple:    #300030;
 $medium-purple:  #480048;
 $regular-purple: #601848;
@@ -149,10 +151,10 @@ ul {
 }
 
 .navbar-panel {
-	background-color: $content-box;
+	background-color: $nav-box;
     margin-top: 20px;
 	box-shadow: 0px 0px 0px 0px, 0px 6px 12px rgba(0, 0, 0, 0.2);
-	border-bottom: 5px solid $color-main;
+	// border-bottom: 5px solid $color-main;
     font-size: 24px;
     line-height: 170%;
     padding-left: 20px;
@@ -172,7 +174,7 @@ ul {
         padding-right: 15px;
     }
     a, a:active {
-        color: $white;
+        color: $navbar-text;
     }
     a:hover {
         color: $color-main;
