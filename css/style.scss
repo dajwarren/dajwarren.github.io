@@ -11,6 +11,7 @@ $google-plus:    #c95644;
 $github:         #f6c2a4;
 $stack-overflow: #c98b3b;
 $rss:            #eea33a;
+$email:          #860038;
 
 $color-main:     #6baed6;
 // $color-main:     #3c6882;
@@ -149,29 +150,26 @@ ul {
 
 .navbar-panel {
 	background-color: $content-box;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-left: 30px;
-	padding-right: 30px;
     margin-top: 20px;
 	box-shadow: 0px 0px 0px 0px, 0px 6px 12px rgba(0, 0, 0, 0.2);
 	border-bottom: 5px solid $color-main;
     font-size: 24px;
     line-height: 170%;
-    padding-left: 15px;
+    padding-left: 20px;
     padding-right: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
 
     ul {
         padding-left: 2px;
+        margin-top: 25px;
     }
     li {
         margin-top: 10px;
         margin-bottom: 10px;
     }
     i {
-        padding-right: 10px;
+        padding-right: 15px;
     }
     a, a:active {
         color: $white;
@@ -230,6 +228,10 @@ ul {
 	.fa-linkedin:hover {
 		color: $linkedin;
 	}
+
+    .fa-envelope:hover {
+        color: $email;
+    }
 
 	.fa-google-plus:hover {
 		color: $google-plus;
