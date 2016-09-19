@@ -3,6 +3,7 @@ layout: post
 title:  "Testing things"
 date:   2016-09-12
 categories: testing
+thumbnail: cogs
 ---
 Let's just get to grips with Markdown (kramdown) for a moment.
 ## This is title

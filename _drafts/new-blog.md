@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New website"
+thumbnail: desktop
 ---
 After several years of it sitting on a rather long to-do list, I've finally set up a website and blog!
 
