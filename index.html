@@ -8,11 +8,10 @@ make-smaller-titles: true
 <!-- Responsive container. Defines central column-->
 <div class="container single">
     <div class="row">
-
         {% include navbar.html %}
 
-        <div itemscope class="col-md-12 index">
-            <div class="content-panel content">
+        <div itemscope class="col-md-12 index content-panel">
+            <!-- <div class="content-panel content"> -->
                 <div class="gravatar">
                     <img src="{{ site.title_image }}" class="img-circle about-image" height="150" width="150" alt = "There is an image here" />
                 </div>
@@ -25,7 +24,7 @@ make-smaller-titles: true
 
                 {% include social_links.html %}
                 </div>
-            </div>
+            <!-- </div> -->
         </div>
     <div class="row">
         <div class="col-md-2">

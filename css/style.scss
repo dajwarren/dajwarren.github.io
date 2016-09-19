@@ -13,16 +13,23 @@ $stack-overflow: #c98b3b;
 $rss:            #eea33a;
 
 $color-main:     #6baed6;
-$darker:         #21211E;
-$dark:           #2D2D29;
-$medium:         #3B3B35;
-/*$medium:		 #3b3b3e*/
+// $color-main:     #3c6882;
+// $darker:         #21211E;
+$darker:         #29292d;
+$dark:           #29292d;
+// $dark:           #b3b7bd;
+$content-box:    #383b42;
+// $content-box:    #dfe4ec;
 $light-medium:   #969696;
 $dark-blue:      #215A6D;
 $light-blue:     #3CA2A2;
 $green:          #92C7A3;
 $light:          #DFECE6;
-$white:          #FFFFFF;
+// $white:          #161616;
+$white:          #f2f2f2;
+$article-text:   #c8d1d7;
+$quote-text:   #c8d1d7;
+$code-text:   #c8d1d7;
 $dark-purple:    #300030;
 $medium-purple:  #480048;
 $regular-purple: #601848;
@@ -103,6 +110,7 @@ ul {
 	margin-top: 20px;
 	margin-left: -0%;
 	width: 100%;
+    color: $white;
 
 	@media (min-width: $screen-sm-min) {
 		font-size: 62px;
@@ -129,7 +137,7 @@ ul {
 }
 
 .content-panel {
-	background-color: $medium;
+	background-color: $content-box;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	padding-left: 30px;
@@ -140,7 +148,7 @@ ul {
 }
 
 .navbar-panel {
-	background-color: $medium;
+	background-color: $content-box;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	padding-left: 30px;
@@ -244,8 +252,11 @@ ul {
 
 .index {
     width: 75%;
+    height: 75%;
+    max-height: 100%;
     margin-left: 5%;
     padding: 0px;
+    margin-top: 20px;
 
 	@media (min-width: $screen-sm-min) {
 		width: 700px;
@@ -299,6 +310,7 @@ ul {
 	}
 
 	.gravatar {
+        margin-top: -15px;
 		width: 100%;
 		text-align: center;
         margin-bottom: 10px;
@@ -459,7 +471,6 @@ ul {
 	}
 }
 
-
 .single {
 	height:100%;
 	max-height: 100%;
@@ -533,6 +544,7 @@ ul {
 		width: 75%;
 		margin-left: 5%;
 		padding: 0px;
+        color: $article-text;
 
 		// @media (min-width: $screen-sm-min) {
 		// 	width: 90%;
@@ -551,8 +563,9 @@ ul {
 
 		.thumb {
 			margin-top: 20px;
-			margin-bottom: 0px;
+			margin-bottom: -10px;
 			text-align: center;
+            color: $white;
 
 			img {
 				height: 50px;
@@ -701,7 +714,7 @@ ul {
 					font-family: 'Anonymous Pro';
 					font-size: 15px;
 					background-color: $darker;
-					color: $white;
+					color: $code-text;
 					padding: 0.5em;
 					vertical-align: middle;
 				}
