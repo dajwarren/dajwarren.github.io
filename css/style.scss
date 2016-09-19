@@ -146,8 +146,31 @@ ul {
 	padding-left: 30px;
 	padding-right: 30px;
     margin-top: 20px;
-	// box-shadow: 0px 0px 0px 0px, 0px 6px 12px //rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 0px 0px, 0px 6px 12px rgba(0, 0, 0, 0.2);
 	border-bottom: 5px solid $color-main;
+    font-size: 24px;
+    line-height: 170%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    ul {
+        padding-left: 2px;
+    }
+    li {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    i {
+        padding-right: 10px;
+    }
+    a, a:active {
+        color: $white;
+    }
+    a:hover {
+        color: $color-main;
+    }
 }
 
 #my-menu {
@@ -169,8 +192,8 @@ ul {
 		.fa {
 			margin-right: 10px;
 		}
+        }
 	}
-}
 
 .links {
 	margin-top: 50px;

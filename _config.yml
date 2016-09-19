@@ -18,8 +18,27 @@ email: your-email@domain.com
 title_description: So this is a description, right?
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://example.com" # the base hostname & protocol for your site
+urls:
+    - text: Home
+      url: /
+      icon: fa-home
+    - text: About Me
+      url: /about/
+      icon: fa-user
+    - text: Bleh
+      url: /bleh/
+      icon: fa-code
+    - text: All posts
+      url: /posts/
+      icon: fa-archive
+    - text: Search
+      url: /search/
+      icon: fa-search
+
 twitter_username: jekyllrb
 github_username:  jekyll
+
+
 
 post_limit: 5
 
