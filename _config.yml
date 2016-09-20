@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: This is site
 title_image: favicons/android-chrome-144x144.png
-title_description: So this is a description, right?
+title_description: The website and blog of a PhD candidate in linguistics. A combination of research, linguistics in general, tech and occasional interesting thoughts and projects.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://example.com" # the base hostname & protocol for your site
 urls:
