@@ -1,10 +1,8 @@
 ---
 layout: default
 ---
-
-
       <div class="content-panel content">
-
+        <div class="series">
         {% if page.series %}
           This post is part of the series '{{ page.series }}':
           <ol class="series">
@@ -25,12 +23,15 @@ layout: default
             {% endif %}
           {% endfor %}
           </ol>
+          <hr>
         {% endif %}
+      </div>
 
         <span itemprop="articleBody">{{ content }}</span>
 
         {% if page.series %}
           {% if seriesnext %}
+          <hr>
             <i>Next post in the series:</i> <a href="{{ seriesnext.url }}">{{ seriesnext.title }}</a>
           {% endif %}
         {% endif %}
