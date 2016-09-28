@@ -24,7 +24,7 @@ $nav-box:         #2a2d32;
 $info-box:        #176b9d;
 // Text
 $index-text:      #c8d1d7;
-$article-text:    #c8d7d7;
+$article-text:    #c8d1d7;
 $quote-text:      #c8d1d7;
 $code-text:       #c8d1d7;
 $navbar-text:     #abbac4;
@@ -126,7 +126,7 @@ ul {
         margin-bottom: 10px;
     }
     i {
-        padding-right: 15px;
+        padding-right: 16px;
     }
     a, a:active {
         color: $navbar-text;
