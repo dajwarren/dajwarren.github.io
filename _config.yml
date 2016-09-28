@@ -22,6 +22,9 @@ urls:
     - text: Home
       url: /
       icon: fa-home
+    - text: Research
+      url: /research
+      icon: fa-graduation-cap
     - text: About Me
       url: /about
       icon: fa-user
