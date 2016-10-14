@@ -25,8 +25,8 @@ While perhaps not everything here is strictly-speaking the best tool for the job
 
 Unfortunately, I can't use it anymore. I tried others, but they didn't work out for me. The end result was that I made my own version, and expanded it to add almost the entirety of the IPA characterset. When I get round to sharing it, I'll update this.
 
-#### Web-based
-**[Chomskey](http://sci1.uk/Chomskey/#ucl-ipa):** I had the horrible experience of teaching in a room with only a projector and a screen. This meant making do with an inevitably-clunky and unfamiliar web-based keyboard if I need to type any IPA unplanned. Apparently I complained enough at home that this was made for me. It lets you type IPA just like a keyboard layout, and is therefore awesome. Also the name.
+<!-- #### Web-based
+**[Chomskey](http://sci1.uk/Chomskey/#ucl-ipa):** I had the horrible experience of teaching in a room with only a projector and a screen. This meant making do with an inevitably-clunky and unfamiliar web-based keyboard if I need to type any IPA unplanned. Apparently I complained enough at home that this was made for me. It lets you type IPA just like a keyboard layout, and is therefore awesome. Also the name. -->
 
 ## Speech analysis
 **[Praat](http://www.fon.hum.uva.nl/praat/):** If you're in the phonetic sciences, you'll almost certainly know Praat. It's amazing. You can do both acoustic measurement and speech manipulation for perceptual work. It also has its own scripting system that, while perhaps a little quirky in places, is incredibly useful for automating work. Best of all, the entire thing is free. Seriously, go use Praat.
