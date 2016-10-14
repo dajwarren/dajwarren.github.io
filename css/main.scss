@@ -22,6 +22,7 @@ $main-background:   #29292d;
 $content-box:     #383b42;
 $nav-box:         #2a2d32;
 $info-box:        #176b9d;
+$warning-box:     #ad1800;
 // Text
 $index-text:      #c8d1d7;
 $article-text:    #c8d1d7;
@@ -203,6 +204,33 @@ ul {
   }
 }
 .info::after{
+  content: '\24D8';
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 38px;
+  font-weight: 900;
+}
+
+.warning {
+  position: relative;
+  margin: 25px 0;
+  margin-left: -30px;
+  padding: 15px 20px  20px;
+  padding-left: 60px;
+  background-color: $warning-box;
+  color: $white;
+  box-sizing: content-box;
+  font-size: 18px;
+  font-weight: 500;
+  @include border-radius(0 5px 5px 0);
+
+  h5{
+    font-size: 18pt;
+  }
+}
+.warning::after{
   content: '\24D8';
   color: #fff;
   position: absolute;
