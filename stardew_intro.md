@@ -17,6 +17,10 @@ Several of these require the installation of [SMAPI](https://github.com/cjsu/SMA
 
 
 ## Suggestions
+<div class="warning">
+<h5>Chests</h5>
+Keep your chests organised.
+</div>
 
 ### Tools
 - Collect your copper axe from the blacksmith if you haven't already.
