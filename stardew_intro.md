@@ -7,6 +7,14 @@ title: Stardew Valley
 
 **[Upload Farm](http://upload.farm):** It's where I uploaded my farm.
 
+## My farm
+
+[Eternal Farm @ upload.farm](http://upload.farm/1BUbum)
+
+![farmhouse interior]({{ site.baseurl }}/assets/stardew_house.png)
+
+
+
 ## Mods
 Several of these require the installation of [SMAPI](https://github.com/cjsu/SMAPI/releases). Download the .zip and extract it into the folder the game's installed in (possibly ```C:/ProgramFiles/Steam/steamapps/common/StardewValley```, depending on how things are set up).
 
