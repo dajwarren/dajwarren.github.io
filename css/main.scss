@@ -107,6 +107,26 @@ ul {
   font-size: 14pt;
 }
 
+nav {
+  float: center;
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    float: left;
+    position: center;
+    a {
+      display: block;
+      padding: 0 20px;
+      line-height: 70px;
+    }
+  }
+    &:hover {
+          }
+}
+
 .navbar-panel {
 	background-color: $nav-box;
   margin-top: 20px;
@@ -243,7 +263,7 @@ ul {
 .single {
 	height:100%;
 	max-height: 100%;
-    margin-left: 15%;
+    margin-left: 25%;
 
 	h1, h2, h3, h4, h5, h6 {
 		font-family: 'Montserrat', sans-serif;
