@@ -1,23 +1,19 @@
-
-<div class="col-md-2 navbar-panel">
-    <div>
-      <ul class="pages">
-          {% for i in site.urls %}
-          	{% assign current = nil %}
-          	{% assign pageurl = page.url | split:'/' | last %}
-          	{% assign menuurl = i.url | split:'/' | last %}
-          	{% assign linkurl = nil %}
-          	{% if i.url contains '://' %}
-          	{% assign linkurl = i.url %}
-          	{% else %}
-          	{% assign linkurl = i.url | prepend: site.baseurl %}
-          	{% endif %}
-          	{% if pageurl == menuurl or page.layout == i.layout %} {% assign current = 'current-menu-item' %} {% endif %}
-  	<li><a href="{{ linkurl }}"><i class="fa {{ i.icon }}"></i> {{ i.text }}</a></li>
-  {% endfor %}
-      </ul>
-
-      {% include social_links.html %}
-    </div>
-
-</div>
+<nav class="navigation">
+  <div class="nav-container">
+    <ul>
+        {% for i in site.urls %}
+          {% assign current = nil %}
+          {% assign pageurl = page.url | split:'/' | last %}
+          {% assign menuurl = i.url | split:'/' | last %}
+          {% assign linkurl = nil %}
+          {% if i.url contains '://' %}
+          {% assign linkurl = i.url %}
+          {% else %}
+          {% assign linkurl = i.url | prepend: site.baseurl %}
+          {% endif %}
+          {% if pageurl == menuurl or page.layout == i.layout %} {% assign current = 'current-menu-item' %} {% endif %}
+    <li><a href="{{ linkurl }}"><i class="fa {{ i.icon }}"></i> {{ i.text }}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
+</nav>
