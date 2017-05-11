@@ -156,16 +156,23 @@ ul {
 
     ul {
       list-style: none;
-      margin-top: 3px;
+      padding: 0px;
+
+      @media (min-width: $screen-lg-min) {
+        margin-top: 3px;
+      }
 
     li {
       display: inline;
       a {
         display: inline-block;
-        font-size: 24px;
+        font-size: 20px;
         padding: 0 20px;
         line-height: 50px;
-        color: $navbar-text
+        color: $navbar-text;
+        @media (min-width: $screen-lg-min) {
+          font-size: 24px;
+        }
       }
     }
       &:hover {
@@ -315,11 +322,25 @@ $colors: (1: #D7161B, 2: #7FD2FD, 3: #04FF47, 4: #26949E, 5:#FFF23B, 6:#B100FA,
   }
 }
 
+.articleBody {
+
+  p, blockquote, table, h1, h2, h3, h4, h5, h6, ul, ol {
+    padding: 0 35px;
+
+    @media (min-width: $screen-lg-min) {
+      padding: 0;
+    }
+  }
+}
+
 
 .index {
   background-color: $main-background;
   height: 100%;
-  margin: 50px 0 0;
+  // margin: 50px 0 0;
+  @media (min-width: $screen-lg-min) {
+    margin: 50px 0 0;
+  }
 
   .index-image {
     margin-left: auto;
