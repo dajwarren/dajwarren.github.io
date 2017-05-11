@@ -137,21 +137,6 @@ ul {
   background-color: $header-background;
 }
 
-// 
-// .content-panel {
-// 	background-color: $main-background;
-//   color: #000000;
-// 	padding-top: 20px;
-// 	padding-bottom: 20px;
-// 	padding-left: 30px;
-// 	padding-right: 30px;
-// 	margin-top: 20px;
-// 	box-shadow: 0px 0px 0px 0px, 0px 6px 12px rgba(0, 0, 0, 0.2);
-// 	border-bottom: 5px solid $color-main;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
-
 .series {
   font-size: 14pt;
 }
@@ -267,18 +252,7 @@ $colors: (1: #D7161B, 2: #7FD2FD, 3: #04FF47, 4: #26949E, 5:#FFF23B, 6:#B100FA,
       padding: 0;
     }
   }
-  //
-  // blockquote {
-  //   max-width: 850px;
-  //   margin-left: auto;
-  //   margin-right: auto;
-  // }
-  //
-  // table {
-  //   // max-width: 850px;
-  //   margin-left: auto;
-  //   margin-right: auto;
-  // }
+
 
   table, th, td {
     padding: 5px;
@@ -312,10 +286,6 @@ $colors: (1: #D7161B, 2: #7FD2FD, 3: #04FF47, 4: #26949E, 5:#FFF23B, 6:#B100FA,
   }
 
   figure.highlight, div.highlighter-rouge {
-    // width: 100%;
-    // margin-left: -15px;
-    // padding-right: 10px;
-    // box-sizing: content-box;
 
     pre {
       // width: 100%;
@@ -363,14 +333,6 @@ $colors: (1: #D7161B, 2: #7FD2FD, 3: #04FF47, 4: #26949E, 5:#FFF23B, 6:#B100FA,
     .index-title {
       padding: 1rem 0;
       background-color: #000000;
-
-      // .author-header {
-      // font-family: 'Montserrat', sans-serif;
-      // color: $color-main;
-      // margin-top: 0px;
-      // padding-top: 15px;
-      // font-size: 40px;
-      // }
     }
 
   .site-description {
