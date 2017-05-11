@@ -18,6 +18,9 @@ $email:           #860038;
 // Backgrounds
 $main-background: #ffffff;
 $main-text: #000000;
+$link-text: #D7161B;
+$photo-background: #000000;
+$photo-text: #ffffff;
 
 // Navbar
 $navbar-background: #000000;
@@ -91,21 +94,23 @@ a:hover {
 }
 
 ul {
-    list-style-type: none;
+    list-style-type: circle;
 }
 
-*,:after,:before {
-	box-sizing:border-box;
-}
+// *,:after,:before {
+// 	box-sizing:border-box;
+// }
 
 /* Classes */
 .header {
 	font-size: 32px;
 	text-align: center;
-	margin-top: 20px;
 	margin-left: -0%;
 	width: 100%;
   color: $header-text;
+  @media (min-width: $screen-lg-min) {
+    margin-top: 20px;
+  }
 
 	@media (min-width: $screen-sm-min) {
 		font-size: 62px;
@@ -136,33 +141,30 @@ ul {
 
 .navigation{
   background-color: $navbar-background;
-  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 1;
+  // z-index: 1;
   border-bottom: 1px solid $navbar-border;
+  text-align:center;
+  @media (min-width: $screen-lg-min) {
+    position: fixed;
+  }
 
 
   .nav-container {
-    width: 100%;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
 
     ul {
       list-style: none;
-      padding: 0;
-      margin: 0;
-      // position: fixed;
+      margin-top: 3px;
 
     li {
-      display: inline-block;
+      display: inline;
       a {
+        display: inline-block;
         font-size: 24px;
         padding: 0 20px;
         line-height: 50px;
-        text-align: center;
         color: $navbar-text
       }
     }
@@ -172,22 +174,30 @@ ul {
   }
 }
 
-$colors: (1: #D7161B, 2: #7FD2FD, 3: #04FF47, 4: #26949E, 5:#B100FA, 6:#FF8821);
+$colors: (1: #D7161B, 2: #7FD2FD, 3: #04FF47, 4: #26949E, 5:#FFF23B, 6:#B100FA,
+          7:#FF8821);
 
 @each $anchor, $color in $colors {
    #{".navigation li:nth-child("+ ($anchor) + ") a:hover"} {
-      border-bottom: 4px solid $color
+      border-bottom: 4px solid $color;
+      margin-bottom: -4px;
       //  background-color: $color;
     }
+    #{".navigation li:nth-child("+ ($anchor) + ") a"} {
+      // border-bottom: 4px solid rgba(0,0,0,0);
+       //  background-color: $color;
+     }
     #{".navigation li:nth-child("+ ($anchor) + ") a:not(:hover) i"} {
         color: $color;
      }
 }
 
-
 .test {
-  margin: 50px 0 0 ;
+  // margin: 50px 0 0 ;
   background-color: $main-background;
+  @media (min-width: $screen-lg-min) {
+    margin-top: 50px;
+  }
 }
 
 .test2 {
@@ -195,7 +205,7 @@ $colors: (1: #D7161B, 2: #7FD2FD, 3: #04FF47, 4: #26949E, 5:#B100FA, 6:#FF8821);
 }
 
 .thumb-test {
-  padding-top: 2rem;
+  padding-top: 4rem;
   margin-bottom: -10px;
   text-align: center;
   background-color: $header-background;
@@ -208,6 +218,7 @@ $colors: (1: #D7161B, 2: #7FD2FD, 3: #04FF47, 4: #26949E, 5:#B100FA, 6:#FF8821);
   background-color: $header-background;
 }
 
+
 .content-test{
   background-color: $main-background;
   color: $main-text;
@@ -215,8 +226,19 @@ $colors: (1: #D7161B, 2: #7FD2FD, 3: #04FF47, 4: #26949E, 5:#B100FA, 6:#FF8821);
   margin-right: auto;
   padding-top: 2rem;
   padding-bottom: 5rem;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 170%;
+
+  a, a:active {
+    color: $link-text;
+
+  }
+
+  a:hover {
+    color: $main-text;
+    border-bottom: 1px solid $link-text;
+  }
+
 
   p, blockquote, table, h1, h2, h3, h4, h5, h6, ul, ol {
     max-width: 850px;
@@ -236,12 +258,35 @@ $colors: (1: #D7161B, 2: #7FD2FD, 3: #04FF47, 4: #26949E, 5:#B100FA, 6:#FF8821);
   //   margin-right: auto;
   // }
 
+  table, th, td {
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    th {
+      border-bottom: 1px solid $main-text;
+      border-top: 2px solid $main-text;
+    }
+
+    tr:last-child td {
+      border-bottom: 2px solid $main-text;
+    }
+
+    tr:hover {
+      background-color: #f5f5f5
+    }
+  }
+
   img {
     max-width: 100%;
     padding: 10px;
     display: block;
     margin-left: auto;
     margin-right: auto
+  }
+
+  li {
+    margin: 10px;
   }
 
   figure.highlight, div.highlighter-rouge {
@@ -269,6 +314,7 @@ $colors: (1: #D7161B, 2: #7FD2FD, 3: #04FF47, 4: #26949E, 5:#B100FA, 6:#FF8821);
     }
   }
 }
+
 
 .index {
   background-color: $main-background;
@@ -326,6 +372,11 @@ $colors: (1: #D7161B, 2: #7FD2FD, 3: #04FF47, 4: #26949E, 5:#B100FA, 6:#FF8821);
     }
   }
 }
+
+
+
+
+
 
 .links {
 	margin-top: 50px;
@@ -636,7 +687,7 @@ $colors: (1: #D7161B, 2: #7FD2FD, 3: #04FF47, 4: #26949E, 5:#B100FA, 6:#FF8821);
 					color: $white;
 				}
 
-				a:hover {
+				a: {
 					color: $color-main;
 				}
 
