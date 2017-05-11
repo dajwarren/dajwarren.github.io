@@ -108,16 +108,33 @@ ul {
 	margin-left: -0%;
 	width: 100%;
   color: $header-text;
-  @media (min-width: $screen-lg-min) {
-    margin-top: 20px;
-  }
-
 	@media (min-width: $screen-sm-min) {
-		font-size: 62px;
 		margin-left: -10%;
 		width: 120%;
 	}
+  @media (min-width: $screen-md-min) {
+    font-size: 44px;
+  }
+  @media (min-width: $screen-lg-min) {
+    margin-top: 20px;
+    font-size: 62px;
+  }
 }
+
+.thumb-test {
+  padding-top: 4rem;
+  margin-bottom: -10px;
+  text-align: center;
+  background-color: $header-background;
+  color: $thumbnail-text
+}
+
+.title-test{
+  text-align: center;
+  padding: 2rem 0;
+  background-color: $header-background;
+}
+
 
 .content-panel {
 	background-color: $main-background;
@@ -150,7 +167,6 @@ ul {
   @media (min-width: $screen-lg-min) {
     position: fixed;
   }
-
 
   .nav-container {
 
@@ -211,21 +227,6 @@ $colors: (1: #D7161B, 2: #7FD2FD, 3: #04FF47, 4: #26949E, 5:#FFF23B, 6:#B100FA,
   background-color: $white;
 }
 
-.thumb-test {
-  padding-top: 4rem;
-  margin-bottom: -10px;
-  text-align: center;
-  background-color: $header-background;
-  color: $thumbnail-text
-}
-
-.title-test{
-  text-align: center;
-  padding: 2rem 0;
-  background-color: $header-background;
-}
-
-
 .content-test{
   background-color: $main-background;
   color: $main-text;
@@ -233,8 +234,15 @@ $colors: (1: #D7161B, 2: #7FD2FD, 3: #04FF47, 4: #26949E, 5:#FFF23B, 6:#B100FA,
   margin-right: auto;
   padding-top: 2rem;
   padding-bottom: 5rem;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 170%;
+  @media (min-width: $screen-md-min) {
+    font-size: 18px;
+  }
+  @media (min-width: $screen-lg-min) {
+    font-size: 20px;
+  }
+
 
   a, a:active {
     color: $link-text;
@@ -251,6 +259,11 @@ $colors: (1: #D7161B, 2: #7FD2FD, 3: #04FF47, 4: #26949E, 5:#FFF23B, 6:#B100FA,
     max-width: 850px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 35px;
+
+    @media (min-width: $screen-lg-min) {
+      padding: 0;
+    }
   }
   //
   // blockquote {
@@ -321,18 +334,6 @@ $colors: (1: #D7161B, 2: #7FD2FD, 3: #04FF47, 4: #26949E, 5:#FFF23B, 6:#B100FA,
     }
   }
 }
-
-.articleBody {
-
-  p, blockquote, table, h1, h2, h3, h4, h5, h6, ul, ol {
-    padding: 0 35px;
-
-    @media (min-width: $screen-lg-min) {
-      padding: 0;
-    }
-  }
-}
-
 
 .index {
   background-color: $main-background;
