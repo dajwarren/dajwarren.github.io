@@ -121,12 +121,14 @@ ul {
   }
 }
 
-.thumb-test {
+.thumbnail {
   padding-top: 4rem;
   margin-bottom: -10px;
   text-align: center;
   background-color: $header-background;
-  color: $thumbnail-text
+  color: $thumbnail-text;
+  border: 0;
+
 }
 
 .title-test{
@@ -502,6 +504,11 @@ $colors: (1: #D7161B, 2: #7FD2FD, 3: #04FF47, 4: #26949E, 5:#FFF23B, 6:#B100FA,
   font-size: 38px;
   font-weight: 900;
 }
+
+
+
+
+
 
 .single {
 	// height:100%;
