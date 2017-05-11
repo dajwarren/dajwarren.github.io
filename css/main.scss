@@ -21,11 +21,15 @@ $main-text: #000000;
 $link-text: #D7161B;
 $photo-background: #000000;
 $photo-text: #ffffff;
-
+$header-text: #ffffff;
+$thumbnail-text: #ffffff;
+$header-background: #000000;
+$block-background:  #29292d;
 // Navbar
 $navbar-background: #000000;
 $navbar-border: #383b42;
 $navbar-text: #ffffff;
+
 
 $info-box:        #176b9d;
 $warning-box:     #ad1800;
@@ -165,11 +169,9 @@ $colors: (1: #D7161B, 2: #7FD2FD, 3: #04FF47, 4: #26949E, 5:#FFF23B, 6:#B100FA,
    #{".navigation li:nth-child("+ ($anchor) + ") a:hover"} {
       border-bottom: 4px solid $color;
       margin-bottom: -4px;
-      //  background-color: $color;
     }
     #{".navigation li:nth-child("+ ($anchor) + ") a"} {
-      // border-bottom: 4px solid rgba(0,0,0,0);
-       //  background-color: $color;
+
      }
     #{".navigation li:nth-child("+ ($anchor) + ") a:not(:hover) i"} {
         color: $color;
@@ -442,26 +444,26 @@ $colors: (1: #D7161B, 2: #7FD2FD, 3: #04FF47, 4: #26949E, 5:#FFF23B, 6:#B100FA,
 }
 
 
-.footer {
-	width: 100%;
-	margin-left: 0%;
-
-	.fa-heart {
-		color: $color-main;
-	}
-
-	@media (min-width: $screen-sm-min) {
-		width: 90%;
-		margin-left: 5%;
-	}
-
-	@media (min-width: $screen-md-min) {
-		width: 80%;
-		margin-left: 10%;
-	}
-
-	@media (min-width: $screen-lg-min) {
-		width: 70%;
-		margin-left: 15%;
-	}
-}
+// .footer {
+// 	width: 100%;
+// 	margin-left: 0%;
+//
+// 	.fa-heart {
+// 		color: $color-main;
+// 	}
+//
+// 	@media (min-width: $screen-sm-min) {
+// 		width: 90%;
+// 		margin-left: 5%;
+// 	}
+//
+// 	@media (min-width: $screen-md-min) {
+// 		width: 80%;
+// 		margin-left: 10%;
+// 	}
+//
+// 	@media (min-width: $screen-lg-min) {
+// 		width: 70%;
+// 		margin-left: 15%;
+// 	}
+// }
