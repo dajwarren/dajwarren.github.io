@@ -27,31 +27,10 @@ $navbar-background: #000000;
 $navbar-border: #383b42;
 $navbar-text: #ffffff;
 
-// Header
-$header-background: #000000;
-$header-text: #ffffff;
-$thumbnail-text: #ffffff;
-
-$color-main:      #6baed6;
-$block-background:  #29292d;
-// $main-background:   #29292d;
-$content-box:     #383b42;
-$nav-box:         #2a2d32;
 $info-box:        #176b9d;
 $warning-box:     #ad1800;
 // Text
-$index-text:      #c8d1d7;
-$article-text:    #c8d1d7;
-$quote-text:      #c8d1d7;
-$code-text:       #c8d1d7;
-// $navbar-text:     #abbac4;
-// $header-text:     #f2f2f2;
-// $white:           #f2f2f2;
 $white:           #ffffff;
-
-
-
-$dark-blue:       #215A6D;
 
 /* Responsive sizes */
 $screen-sm-min: 768px;
@@ -85,11 +64,6 @@ body {
 
 a, a:active {
 	color: $main-text;
-	text-decoration: none;
-}
-
-a:hover {
-	color: $dark-blue;
 	text-decoration: none;
 }
 
