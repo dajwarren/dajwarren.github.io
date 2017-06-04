@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-      <div class="content-test">
+      <div class="content-panel">
         <div class="series">
         {% if page.series %}
           This post is part of the series '{{ page.series }}':
@@ -27,7 +27,7 @@ layout: default
         {% endif %}
       </div>
 
-        <span itemprop="articleBody">{{ content }}</span>
+        <span itemprop="articleBody", class='articleBody'>{{ content }}</span>
 
         {% if page.series %}
           {% if seriesnext %}

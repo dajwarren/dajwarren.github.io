@@ -23,8 +23,8 @@ Now we have lists:
 - Now this is silly
 
 1. yes
-2. no
-3. maybe?
+- no?
+- maybe?
 
 ### Tables?
 

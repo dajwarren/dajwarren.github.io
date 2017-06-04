@@ -7,6 +7,13 @@
 <link rel="profile" href="https://gmpg.org/xfn/11" />
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.css">
+
+{% if page.css %}
+  {% for filecss in page.css%}
+    <link rel="stylesheet" type="text/css" media="all" href="{{ site.baseurl }}/css/{{ filecss }}.css" />
+  {% endfor %}
+{% endif %}
+
 <link rel="stylesheet" type="text/css" media="all" href="{{ site.baseurl }}/css/main.css" />
 <link rel="stylesheet" href="{{ site.baseurl }}/css/highlightjs.piperita.css">
 
