@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: This is site
-title_image: favicons/android-chrome-144x144.png
+title_image: assets/images/title_image.png
 title_description: The website and blog of a PhD candidate in linguistics. A combination of research, linguistics in general, tech and occasional interesting thoughts and projects.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://example.com" # the base hostname & protocol for your site
@@ -28,6 +28,9 @@ urls:
     - text: About Me
       url: /about
       icon: fa-user
+    - text: Photos
+      url: /2017/05/10/photos-test.html
+      icon: fa-camera
     - text: Links
       url: /resources
       icon: fa-link
@@ -37,6 +40,7 @@ urls:
     - text: Search
       url: /search
       icon: fa-search
+
 
 social:
     - icon: fa-envelope
