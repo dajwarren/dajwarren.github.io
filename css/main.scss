@@ -2,6 +2,7 @@
 ---
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Droidsans);
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700);
 
 /* Colours */
@@ -16,13 +17,15 @@ $email:           #860038;
 
 /* Main site */
 // Backgrounds
-$main-background: #ffffff;
-$main-text: #000000;
+// $main-background: #ffffff;
+$main-background: #f9f9f9;
+// $main-text: #000000;
+$main-text: #0c0c0c;
 $link-text: #D7161B;
 $photo-background: #000000;
 $photo-text: #ffffff;
-$header-text: #ffffff;
-$thumbnail-text: #ffffff;
+$header-text: #f9f9f9;
+$thumbnail-text: #f9f9f9;
 $header-background: #000000;
 $block-background:  #29292d;
 // Navbar
@@ -55,12 +58,13 @@ html {
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open sans', sans-serif;
 	font-weight: 300;
 	background-color: $main-background;
 	color: $main-text;
 	font-size: 16px;
-  position: relative;
+    position: relative;
+    text-decoration: none;
 	// height: 100%;
 	// width: 100%
   margin: 0;
@@ -106,6 +110,7 @@ ul {
   background-color: $header-background;
   color: $thumbnail-text;
   border: 0;
+  border-radius: 0;
 
 }
 
@@ -129,6 +134,7 @@ ul {
   // z-index: 1;
   border-bottom: 1px solid $navbar-border;
   text-align:center;
+  text-decoration: none !important;
   @media (min-width: $screen-lg-min) {
     position: fixed;
   }
@@ -154,10 +160,12 @@ ul {
         @media (min-width: $screen-lg-min) {
           font-size: 24px;
         }
+
+      }
+      &:hover {
+              text-decoration: none;
       }
     }
-      &:hover {
-            }
     }
   }
 }
@@ -169,6 +177,7 @@ $colors: (1: #D7161B, 2: #7FD2FD, 3: #04FF47, 4: #26949E, 5:#FFF23B, 6:#B100FA,
    #{".navigation li:nth-child("+ ($anchor) + ") a:hover"} {
       border-bottom: 4px solid $color;
       margin-bottom: -4px;
+      text-decoration: none;
     }
     #{".navigation li:nth-child("+ ($anchor) + ") a"} {
 
@@ -215,6 +224,7 @@ $colors: (1: #D7161B, 2: #7FD2FD, 3: #04FF47, 4: #26949E, 5:#FFF23B, 6:#B100FA,
   a:hover {
     color: $main-text;
     border-bottom: 1px solid $link-text;
+    text-decoration: none;
   }
 
 
@@ -284,6 +294,7 @@ $colors: (1: #D7161B, 2: #7FD2FD, 3: #04FF47, 4: #26949E, 5:#FFF23B, 6:#B100FA,
 }
 
 .index {
+  font-family: 'Montserrat', sans-serif;
   background-color: $main-background;
   height: 100%;
   // margin: 50px 0 0;
