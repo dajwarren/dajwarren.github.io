@@ -15,25 +15,28 @@
 # in the templates via {{ site.myvariable }}.
 title: This is site
 title_image: assets/images/title_image.png
-title_description: The website and blog of a PhD candidate in linguistics. A combination of research, linguistics in general, tech and occasional interesting thoughts and projects.
+title_description: The site of a PhD candidate in Linguistics (sociophonetics) and a data enthusiast.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://example.com" # the base hostname & protocol for your site
 urls:
     - text: Home
       url: /
       icon: fa-home
-    - text: Research
-      url: /research
-      icon: fa-graduation-cap
-    - text: About Me
-      url: /about
-      icon: fa-user
-    - text: Photos
-      url: /2017/05/10/photos-test.html
-      icon: fa-camera
-    - text: Links
-      url: /resources
-      icon: fa-link
+    - text: Data
+      url: /data_projects
+      icon: fa-bar-chart
+    # - text: Research
+    #   url: /research
+    #   icon: fa-graduation-cap
+    # - text: About Me
+    #   url: /about
+    #   icon: fa-user
+    # - text: Photos
+    #   url: /2017/05/10/photos-test.html
+    #   icon: fa-camera
+    # - text: Links
+    #   url: /resources
+    #   icon: fa-link
     - text: All posts
       url: /posts
       icon: fa-archive
