@@ -17,7 +17,7 @@ title: This is site
 title_image: assets/images/title_image.png
 title_description: The site of a PhD candidate in Linguistics (sociophonetics) and a data enthusiast.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://example.com" # the base hostname & protocol for your site
+# url: "http://example.com" # the base hostname & protocol for your site
 urls:
     - text: Home
       url: /
@@ -47,13 +47,13 @@ urls:
 
 social:
     - icon: fa-envelope
-      link: 'mailto:r01daw13@abdn.ac.uk'
+      link: 'mailto:thirdformant@gmail.com'
       text: 'Email'
     - icon: fa-twitter
-      link: 'http://twitter.com/dajwarren'
+      link: 'http://twitter.com/thirdformant'
       text: 'Twitter'
     - icon: fa-github-alt
-      link: 'http://github.com/dajwarren'
+      link: 'http://github.com/thirdformant'
       text: 'Github'
 
 
