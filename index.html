@@ -3,23 +3,15 @@ layout: base
 make-smaller-titles: true
 ---
 
-<main class="index">
+<div class="index">
 
 <div class="index-image">
-  <img src="{{ site.title_image }}" class="img-circle about-image" height="150" width="150" alt = "There is an image here" />
+  <div class="index-title">
+      <h1 class="header" itemprop="name">{{ site.title }}</h1>
+  </div>
+
 </div>
 
-<div class="index-title">
-    <h1 class="header" itemprop="name">{{ site.title }}</h1>
-</div>
 
-<div class="site-description">
-      {{ site.title_description }}
-</div>
-{% include social_links.html %}
 
-<div class="index-content">
-    <!-- <p>words!</p> -->
 </div>
-
-</main>

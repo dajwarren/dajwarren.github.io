@@ -52,12 +52,8 @@ $screen-lg-min: 1200px;
 }
 
 /* Globals */
-html {
-	height: 100%;
-	overflow-x: hidden;
-}
-
-body {
+html, body {
+  overflow-x: hidden;
 	font-family: 'Open sans', sans-serif;
 	font-weight: 300;
 	background-color: $main-background;
@@ -65,8 +61,8 @@ body {
 	font-size: 16px;
     position: relative;
     text-decoration: none;
-	// height: 100%;
-	// width: 100%
+	height: 100%;
+	width: 100%;
   margin: 0;
 }
 
@@ -120,21 +116,21 @@ ul {
   background-color: $header-background;
 }
 
-.series {
-  font-size: 14pt;
-}
+
 
 
 
 .navigation{
   background-color: $navbar-background;
-  width: 100%;
+  width: 100vw;
   top: 0;
   left: 0;
-  // z-index: 1;
+  right: 0;
+  z-index: 1;
   border-bottom: 1px solid $navbar-border;
   text-align:center;
   text-decoration: none !important;
+  position: fixed;
   @media (min-width: $screen-lg-min) {
     position: fixed;
   }
@@ -188,7 +184,7 @@ $colors: (1: #D7161B, 2: #7FD2FD, 3: #04FF47, 4: #26949E, 5:#FFF23B, 6:#B100FA,
 }
 
 .test {
-  // margin: 50px 0 0 ;
+  margin: 50px 0 0;
   background-color: $main-background;
   @media (min-width: $screen-lg-min) {
     margin-top: 50px;
@@ -215,6 +211,9 @@ $colors: (1: #D7161B, 2: #7FD2FD, 3: #04FF47, 4: #26949E, 5:#FFF23B, 6:#B100FA,
     font-size: 20px;
   }
 
+  .series {
+    font-size: 14pt;
+  }
 
   a, a:active {
     color: $link-text;
@@ -294,32 +293,52 @@ $colors: (1: #D7161B, 2: #7FD2FD, 3: #04FF47, 4: #26949E, 5:#FFF23B, 6:#B100FA,
 }
 
 .index {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: $main-background;
   height: 100%;
   // margin: 50px 0 0;
   @media (min-width: $screen-lg-min) {
-    margin: 50px 0 0;
+    // margin: 50px 0 0;
   }
 
   .index-image {
-    margin-left: auto;
-    margin-right: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
+    url({{ site.title_image }});
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    // margin-left: auto;
+    // margin-right: auto;
     padding-top: 3rem;
-    background-color: $header-background;
+    position: center;
+    // background-color: $header-background;
 
+    // img {
+    //   padding: 10px;
+    //   display: block;
+    //   position: center;
+    //   margin-left: auto;
+    //   margin-right: auto
+    // }
     img {
-      padding: 10px;
-      display: block;
-      position: center;
-      margin-left: auto;
-      margin-right: auto
+      width: 100%;
+      height: 50%;
+
     }
   }
 
     .index-title {
-      padding: 1rem 0;
-      background-color: #000000;
+      text-align: center;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      h1 {
+      font-size: 5rem;
+      text-shadow: 0.1rem 0.1rem 1rem $main-text;
+      }
     }
 
   .site-description {
