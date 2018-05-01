@@ -99,7 +99,7 @@ ul {
 
 .thumbnail {
   padding-top: 4rem;
-  margin-bottom: -10px;
+  margin-bottom: 0px;
   text-align: center;
   background-color: $header-background;
   color: $thumbnail-text;
@@ -124,7 +124,6 @@ ul {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
   border-bottom: 1px solid $navbar-border;
   text-align:center;
   text-decoration: none !important;
