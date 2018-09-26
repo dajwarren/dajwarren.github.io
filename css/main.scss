@@ -271,23 +271,20 @@ $colors: (1: #D7161B, 2: #7FD2FD, 3: #04FF47, 4: #26949E, 5:#FFF23B, 6:#B100FA,
   }
 
   figure.highlight, div.highlighter-rouge {
-
     pre {
-      // width: 100%;
+      width: 50%;
       font-family: 'Anonymous Pro';
       background-color: $block-background;
-      color: $white;
       font-size: 12px;
-      // border: none;
-      padding-left: 15px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      padding-right: 15px;
-      // box-sizing: content-box;
+      margin-left: auto;
+      margin-right: auto;
+      border: none;
+      padding: 15px 20px 20px 15px;
+      box-sizing: border-box;
       border-radius: 0;
       margin-bottom: 10px;
       margin-top: 10px;
-      padding: 2rem 2rem 2rem calc(50% - 425px);
+      // padding: 2rem 2rem 2rem calc(50% - 425px);
     }
   }
 }
