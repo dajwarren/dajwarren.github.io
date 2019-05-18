@@ -127,6 +127,7 @@ ul {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 100;
   border-bottom: 1px solid $navbar-border;
   text-align:center;
   text-decoration: none !important;
@@ -287,6 +288,12 @@ $colors: (1: #D7161B, 2: #7FD2FD, 3: #04FF47, 4: #26949E, 5:#FFF23B, 6:#B100FA,
       // padding: 2rem 2rem 2rem calc(50% - 425px);
     }
   }
+}
+
+.vega-plot {
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .index {
